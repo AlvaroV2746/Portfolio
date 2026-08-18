@@ -1,0 +1,189 @@
+/* Estilos globales y reseteo */
+html,
+body,
+#root {
+  height: 100%;
+  margin: 0;
+  background: fixed;
+  background-image: url('/src/assets/images/background-4.png');
+  background-size: cover;
+  font-family: sans-serif;
+}
+
+.d-flex.flex-column.h-100 {
+  min-height: 100vh;
+}
+
+main {
+  flex: 1;
+}
+
+/* Tipografía y elementos base */
+h1 {
+  color: #1e00c5;
+  font-weight: 400;
+}
+
+h2 {
+  color: aliceblue;
+  font-size: 20px;
+}
+
+p {
+  color: rgb(47, 47, 47);
+  font-size: 23px;
+}
+
+/* Navegación */
+.navborder {
+  border-bottom: 2px solid #0d6efd;
+}
+
+#nav {
+  text-align: center;
+  padding: 100px;
+}
+
+nav a {
+  color: rgb(47, 47, 47);
+  font-size: 20px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+nav ul {
+  display: inline-block;
+  text-align: center;
+}
+
+/* Botones y estilo de botones reutilizables */
+.btn-blue {
+  background-color: #1e00c5;
+  border-radius: 20px;
+  width: 180px;
+  height: 40px;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-blue:hover {
+  background-color: rgb(0, 0, 63);
+  color: white;
+}
+
+/* Secciones específicas */
+
+#contcohe img{
+  height: 400px;
+  transition: 0.3s;
+}
+#contcohe img:hover{
+  height: 450px;
+
+}
+#contcohe{
+  margin-top: 50px;
+  margin-bottom: 50px;
+text-align: center;
+}
+#profile img {
+  height: 80%;
+}
+
+#techstack {
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.863) 0%, rgba(0, 0, 179, 1) 52%, rgba(0, 1, 255, 1) 100%);
+  width: 100%;
+}
+
+#tecnologias {
+  background-color: aliceblue;
+}
+
+#tecnologias i {
+  font-size: 70px;
+}
+
+#tecnologias p {
+  position: relative;
+  top: 15px;
+  font-size: 15px;
+}
+
+#exp,
+#Aca {
+  background-color: rgb(255, 255, 255);
+}
+
+#exp img,
+#Aca img {
+  width: 130px;
+  filter: grayscale(100%);
+  transition: 0.3s;
+}
+
+#exp img:hover,
+#Aca img:hover {
+  filter: grayscale(0%);
+}
+
+#proyecto h2 {
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.863) 0%, rgba(0, 0, 179, 1) 52%, rgba(0, 1, 255, 1) 100%);
+  height: 65px;
+  color: white;
+}
+
+.subtitle {
+  color: #1e00c5;
+}
+
+#pcont {
+  border: 1px solid #dee2e6;
+  border-radius: 8px;
+  background-color: rgba(240, 248, 255, 0.613);
+}
+
+#divimg img {
+  width: 100%;
+  height: 200px;
+  /* O la altura que prefieras para tu tarjeta */
+  object-fit: cover;
+  /* Para que la imagen no se deforme */
+}
+
+/* Footer y extras */
+footer {
+  bottom: 20px;
+}
+.linkIcon{
+  font-size: 60px;
+}
+
+#fix {
+  position: fixed;
+  right: 5%;
+  bottom: 0px;
+  background-color: #14f400;
+  height: 40px;
+  width: 70px;
+  text-align: center;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  transition: all 0.3s ease;
+}
+#fix:hover {
+  height: 70px;
+  width: 70px; 
+  background-color: #0b8100;
+}
+
+#fix a {
+  color: white;
+  font-size: 40px;
+}
+
+#i2, #i3{
+  margin-top: 30px;
+}
