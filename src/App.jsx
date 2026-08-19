@@ -9,7 +9,7 @@ import Contact from './pages/Contact';
 
 function App() {
   return (
-    <Router>
+    <Router basename="/Portfolio">
       <div className="d-flex flex-column h-100">
         <header>
           <Navbar />
