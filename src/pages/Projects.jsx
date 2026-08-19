@@ -80,7 +80,7 @@ const Projects = () => {
               </div>
               <div id="pbotton" className="row">
                 <div id="vo" className="col-6">
-                  <a className="btn btn-primary" target="_blank" rel="noreferrer" href="https://alvaroproyectos.infinityfreeapp.com/login.php" role="button">Ver online</a>
+                  <a className="btn btn-primary" target="_blank" rel="noreferrer" href="https://blucotravel.com/" role="button">Ver online</a>
                 </div>
               </div>
             </div>
