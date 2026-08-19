@@ -51,6 +51,9 @@ const Projects = () => {
               </div>
               <div id="divp">
                 <p>Sistema de gestión de clientes, productos y ventas. Realizado en HTML, CSS, PHP, MVC, Bootstrap, Js, Ajax, jQuery y MySQL de base de datos.</p>
+                <p>Ingresar con credenciales:</p>
+                <p>Usuario: test</p>
+                <p>password: test</p>
               </div>
               <div id="pbotton" className="row">
                 <div id="vo" className="col-6">
