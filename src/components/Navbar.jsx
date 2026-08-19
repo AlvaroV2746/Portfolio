@@ -11,7 +11,7 @@ const Navbar = () => {
         <div className="row">
           <div id="nav" className="col-12 col-sm-6 p-3">
             <Link to="/">
-              <ul className={`px-3 ${isActive('/')}`}>Inicio</ul>
+              <ul className={`px-3 ${isActive('/home')}`}>Inicio</ul>
             </Link>
             <Link to="/about">
               <ul className={`px-3 ${isActive('/about')}`}>Sobre mi</ul>
