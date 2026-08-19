@@ -5,8 +5,8 @@ const Footer = () => {
     <footer className="container mt-auto pb-2 pt-5">
       <div className="row">
         <div id="i1" className="col-3 linkIcon">
-          <a href="https://github.com/" target="_blank" rel="noreferrer"><i className="fa-brands fa-github"></i></a>
-          <a href="https://www.linkedin.com/feed/" target="_blank" rel="noreferrer"><i className="fa-brands fa-linkedin"></i></a>
+          <a href="https://github.com/AlvaroV2746" target="_blank" rel="noreferrer"><i className="fa-brands fa-github"></i></a>
+          <a href="linkedin.com/in/alvaro-villarreal-854061188" target="_blank" rel="noreferrer"><i className="fa-brands fa-linkedin"></i></a>
         </div>
         <div id="i2" className="col-3">
           <p>Software Developer</p>

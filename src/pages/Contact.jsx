@@ -1,9 +1,33 @@
 import React from 'react';
+import emailjs from '@emailjs/browser';
 
 const Contact = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Aquí puedes manejar la lógica de envío de tu formulario en React
+
+    const datosFormulario = {
+      nombre: e.target.txtName.value,
+      email: e.target.txtEmail.value,
+      telefono: e.target.txtPhone.value,
+      mensaje: e.target.txtMen.value,
+    };
+
+    emailjs.send(
+    'service_ahj39f6', 
+    'template_9sihg0c', 
+    datosFormulario, 
+    '51GRVsQsV94v6JBIy'
+  )
+  .then((response) => {
+      console.log('¡Correo enviado con éxito!', response.status, response.text);
+      alert('¡Mensaje enviado correctamente!');
+      e.target.reset(); // Para limpiar el formulario
+  })
+  .catch((err) => {
+      console.error('Falla en la misión, error:', err);
+      alert('Hubo un error al enviar el mensaje, intenta de nuevo.');
+  });
+
   };
 
   return (
@@ -15,7 +39,7 @@ const Contact = () => {
       </div>
       <div className="row">
         <div className="col-12 col-sm-6">
-          <p>Te invito a que te contactes enviándome un mensaje o bien por whatsapp.</p> 
+          <p>Te invito a que te contactes enviándome un mensaje o bien por whatsapp.</p>
         </div>
         <div className="col-12 col-sm-6">
           <form onSubmit={handleSubmit}>

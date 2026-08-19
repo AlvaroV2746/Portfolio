@@ -1,6 +1,7 @@
 import React from 'react';
 import ABMClientes from '../assets/images/abmclientes.png';
 import ABMVentas from '../assets/images/abmventas.png';
+import bluco from '../assets/images/bluco.png';
 
 const Projects = () => {
   return (
@@ -23,7 +24,7 @@ const Projects = () => {
                 <img src={ABMClientes} className="img-fluid rounded" alt="ABM Clientes" />
               </div>
               <div id="divh2">
-                <h2 className="p-2">Task Manager</h2>
+                <h2 className="p-2">TASK MANAGER</h2>
               </div>
               <div id="divp">
                 <p>Alta, baja y modificación de un registro de clientes. Realizado en HTML, CSS, PHP, Bootstrap y Json.</p>
@@ -57,6 +58,26 @@ const Projects = () => {
                 </div>
                 <div id="cf" className="col-6">
                   <a target="_blank" rel="noreferrer" href="https://github.com/AlvaroV2746/SALES-MANAGMENT-SYSTEM">Codigo fuente</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Proyecto 3*/}
+          <div id="proyecto" className="col-12 col-md-4 p-3">
+            <div className="p-3" id="pcont">
+              <div id="divimg">
+                <img src={bluco} className="img-fluid rounded" alt="Sistema de Gestión de Ventas" />
+              </div>
+              <div id="divh2">
+                <h2 className="p-2">SISTEMA DE VENTAS DE TURISMO BLUCO</h2>
+              </div>
+              <div id="divp">
+                  <p>Sitio web de turismo comunitario para agencia de viajes en Colombia. Realizado en HTML, CSS, react, Bootstrap, Js.</p>
+              </div>
+              <div id="pbotton" className="row">
+                <div id="vo" className="col-6">
+                  <a className="btn btn-primary" target="_blank" rel="noreferrer" href="https://alvaroproyectos.infinityfreeapp.com/login.php" role="button">Ver online</a>
                 </div>
               </div>
             </div>
