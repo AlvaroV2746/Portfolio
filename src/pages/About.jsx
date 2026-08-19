@@ -1,5 +1,5 @@
 import React from 'react';
-import profileImg from '../assets/images/Profile.jpg';
+import profileImg from '../assets/images/Profile.png';
 import whImg from '../assets/images/WH.png';
 import tpImg from '../assets/images/TP.png';
 import avonImg from '../assets/images/Avon.png';
