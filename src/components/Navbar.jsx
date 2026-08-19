@@ -11,16 +11,16 @@ const Navbar = () => {
         <div className="row">
           <div id="nav" className="col-12 col-sm-6 p-3">
             <Link to="/">
-              <ul className={`px-3 ${isActive('/')}`}>Inicio</ul>
+              <ul className={`px-3 ${isActive('/Portfolio/')}`}>Inicio</ul>
             </Link>
             <Link to="/about">
-              <ul className={`px-3 ${isActive('/about')}`}>Sobre mi</ul>
+              <ul className={`px-3 ${isActive('/Portfolio/about')}`}>Sobre mi</ul>
             </Link>
             <Link to="/projects">
-              <ul className={`px-3 ${isActive('/projects')}`}>Proyectos</ul>
+              <ul className={`px-3 ${isActive('/Portfolio/projects')}`}>Proyectos</ul>
             </Link>
             <Link to="/contact">
-              <ul className={`px-3 ${isActive('/contact')}`}>Contacto</ul>
+              <ul className={`px-3 ${isActive('/Portfolio/contact')}`}>Contacto</ul>
             </Link>
           </div>
           <div id="cv" className="col-12 col-sm-6 p-4">
