@@ -19,7 +19,6 @@ export default function About() {
           <p className="lead">
             Apasionado por la tecnología, gestión de proyectos y los idiomas. Desarrollador Full Stack bilingüe con diplomado en Atención al cliente, ciberseguridad con estudio en Base de datos SQL.
           </p>
-          <a href="/projects" className="btn btn-blue mt-2">Mis proyectos</a>
         </div>
         <div className="col-md-4 text-center mt-4 mt-md-0">
           <img
