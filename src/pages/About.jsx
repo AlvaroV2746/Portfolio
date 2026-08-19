@@ -7,6 +7,7 @@ import mdImg from '../assets/images/MD.png';
 import poliImg from '../assets/images/Politecnico.png';
 import depcImg from '../assets/images/logo_depc.jpg';
 import e4ccImg from '../assets/images/E4CC.png';
+import iqor from '../assets/images/iqor.jpeg';
 
 export default function About() {
   return (
@@ -157,6 +158,15 @@ export default function About() {
             <h3>Agente de servicio técnico</h3>
             <h4>Avon</h4>
             <p>Preparación del equipo para entrega al usuario final. Solución de problemas informáticos...</p>
+          </div>
+        </div>
+      {/* Experiencia 4 */}
+        <div className="d-flex align-items-start mb-4">
+          <img src={iqor} alt="Iqor Logo" className="me-3" style={{ width: '80px' }} />
+          <div>
+            <h3>Agente Bilingue</h3>
+            <h4>Iqor</h4>
+            <p>Agente de soporte de servicios logisticos a repartidores de importante compañia en estados unidos con atencion en ingles</p>
           </div>
         </div>
       </section>
