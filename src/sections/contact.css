@@ -1,0 +1,62 @@
+.pf-contact__head { display: grid; gap: 14px; margin-bottom: var(--s-6); }
+.pf-contact__head h2 { font-size: clamp(28px, 3.4vw, 40px); max-width: 14em; }
+
+.pf-contact__intro { font-size: 16px; line-height: 1.7; margin-bottom: var(--s-4); }
+
+/* --- canales --- */
+.pf-channel {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 16px 18px;
+  border-radius: var(--r-lg);
+  color: var(--text);
+}
+.pf-channel + .pf-channel { margin-top: 12px; }
+.pf-channel > i { width: 24px; text-align: center; font-size: 19px; color: var(--muted); }
+.pf-channel__text { display: grid; gap: 2px; flex: 1; min-width: 0; }
+.pf-channel__label { font-size: 11px; letter-spacing: 0.06em; color: var(--faint); }
+.pf-channel__value { font-size: 14px; overflow: hidden; text-overflow: ellipsis; }
+
+.pf-channel--link {
+  text-decoration: none;
+  transition: transform .2s cubic-bezier(.2,.8,.2,1), background .2s ease, border-color .2s ease;
+}
+.pf-channel--link:hover {
+  transform: translateY(-3px);
+  background: var(--glass-2);
+  border-color: var(--glass-hi);
+  color: var(--text);
+}
+.pf-channel__go { font-size: 13px; color: var(--faint); transition: transform .18s cubic-bezier(.2,.8,.2,1); }
+.pf-channel--link:hover .pf-channel__go { transform: translateX(3px); }
+
+.pf-copy {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  height: 44px;
+  padding: 0 12px;
+  border-radius: var(--r-sm);
+  border: 1px solid var(--glass-line);
+  background: var(--glass);
+  color: var(--muted);
+  font-size: 11.5px;
+  cursor: pointer;
+  transition: color .18s ease, border-color .18s ease;
+}
+.pf-copy:hover { color: var(--text); border-color: var(--glass-hi); }
+.pf-copy--done, .pf-copy--done:hover { color: var(--ok); border-color: color-mix(in oklab, var(--ok) 40%, transparent); }
+
+/* --- formulario --- */
+.pf-form { display: grid; gap: 16px; padding: 30px; border-radius: 22px; }
+.pf-form__label { display: block; font-size: 11px; letter-spacing: 0.06em; color: var(--faint); margin-bottom: 8px; }
+.pf-form .pf-field { width: 100%; }
+.pf-field--area { height: auto; padding: 14px 15px; resize: vertical; }
+.pf-form .pf-btn { width: 100%; }
+.pf-form .pf-btn:disabled { opacity: .6; cursor: progress; transform: none; }
+
+.pf-form__msg { display: flex; align-items: center; gap: 8px; font-size: 13.5px; text-align: center; justify-content: center; }
+.pf-form__msg--ok { color: var(--ok); }
+.pf-form__msg--err { color: var(--text); }
+.pf-form__note { font-size: 11.5px; color: var(--faint); text-align: center; }

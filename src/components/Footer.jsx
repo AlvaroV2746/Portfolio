@@ -1,29 +1,21 @@
-import React from 'react';
+import './footer.css';
 
-const Footer = () => {
-  return (
-    <footer className="container mt-auto pb-2 pt-5">
-      <div className="row">
-        <div id="i1" className="col-3 linkIcon">
-          <a href="https://github.com/AlvaroV2746" target="_blank" rel="noreferrer"><i className="fa-brands fa-github"></i></a>
-          <a href="linkedin.com/in/alvaro-villarreal-854061188" target="_blank" rel="noreferrer"><i className="fa-brands fa-linkedin"></i></a>
-        </div>
-        <div id="i2" className="col-3">
-          <p>Software Developer</p>
-        </div>
-        <div id="i3" className="col-3">
-          <p>Alvarovillarreal2746@hotmail.com</p>
-        </div>
-        <div id="i4" className="col-3 wsIcon">
-          <div id="fix" className='ws-icon'>
-            <a href="https://api.whatsapp.com/send?phone=573184559655" target="_blank" rel="noreferrer">
-              <i className="fa-brands fa-whatsapp"></i>
-            </a>
-          </div>
-        </div>
+const Footer = () => (
+  <footer className="pf-footer">
+    <div className="pf-footer__inner">
+      <span className="pf-mono pf-footer__copy">
+        © 2026 Álvaro Villarreal · Full Stack Developer
+      </span>
+
+      <div className="pf-footer__links">
+        <a href="#inicio">Volver arriba</a>
+        <a href="https://github.com/AlvaroV2746" target="_blank" rel="noreferrer">GitHub</a>
+        <a href="https://www.linkedin.com/in/alvaro-villarreal-854061188" target="_blank" rel="noreferrer">
+          LinkedIn
+        </a>
       </div>
-    </footer>
-  );
-};
+    </div>
+  </footer>
+);
 
 export default Footer;

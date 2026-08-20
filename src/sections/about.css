@@ -1,0 +1,24 @@
+.pf-about__head { display: grid; gap: 14px; margin-bottom: var(--s-6); }
+.pf-about__head h2 { font-size: clamp(28px, 3.4vw, 40px); max-width: 16em; }
+
+.pf-about__bio { display: grid; gap: 18px; }
+.pf-about__bio p { font-size: 17px; line-height: 1.7; }
+
+.pf-trayecto { border-radius: var(--r-lg); padding: 18px 20px; }
+.pf-trayecto + .pf-trayecto { margin-top: 12px; }
+
+.pf-trayecto__head {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 14px;
+}
+.pf-trayecto__head i { color: var(--accent-ink); font-size: 13px; }
+.pf-trayecto__head span { font-size: 11.5px; letter-spacing: 0.06em; color: var(--faint); }
+
+.pf-trayecto__list { list-style: none; margin: 0; padding: 0; display: grid; gap: 12px; }
+.pf-trayecto__list--tight { gap: 10px; }
+.pf-trayecto__list li { display: grid; gap: 2px; }
+.pf-trayecto__list b { font-size: 14.5px; font-weight: 600; color: var(--text); }
+.pf-trayecto__list em { font-style: normal; font-weight: 400; color: var(--faint); }
+.pf-trayecto__list span { font-size: 13px; color: var(--faint); }
