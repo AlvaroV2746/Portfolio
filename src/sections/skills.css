@@ -1,0 +1,69 @@
+.pf-skills__head {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 32px;
+  margin-bottom: var(--s-6);
+}
+.pf-skills__title { display: grid; gap: 14px; }
+.pf-skills__title h2 { font-size: clamp(28px, 3.4vw, 40px); }
+
+.pf-tabs {
+  display: flex;
+  gap: 6px;
+  padding: 5px;
+  border-radius: var(--r-lg);
+  border: 1px solid var(--glass-line);
+  background: var(--glass);
+}
+.pf-tab {
+  height: 44px;
+  padding: 0 18px;
+  border: 1px solid transparent;
+  border-radius: var(--r-sm);
+  background: transparent;
+  color: var(--muted);
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: color .18s ease, background .18s ease;
+}
+.pf-tab:hover { color: var(--text); background: var(--glass); }
+.pf-tab--on,
+.pf-tab--on:hover {
+  color: #fff;
+  background: color-mix(in oklab, var(--accent) 92%, transparent);
+  box-shadow: 0 8px 22px -12px color-mix(in oklab, var(--accent) 80%, transparent);
+}
+
+.pf-skill {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  height: 100%;
+  padding: 20px;
+  border-radius: var(--r-lg);
+  transition: transform .2s cubic-bezier(.2,.8,.2,1), background .2s ease, border-color .2s ease;
+}
+.pf-skill:hover {
+  transform: translateY(-3px);
+  background: var(--glass-2);
+  border-color: var(--glass-hi);
+}
+.pf-skill i {
+  width: 26px;
+  font-size: 22px;
+  text-align: center;
+  color: var(--muted);
+  transition: color .2s ease;
+}
+.pf-skill:hover i { color: var(--accent-ink); }
+.pf-skill b { display: block; font-size: 15px; font-weight: 600; color: var(--text); }
+.pf-skill span { font-size: 12.5px; color: var(--faint); }
+
+@media (max-width: 575.98px) {
+  .pf-tabs { width: 100%; }
+  .pf-tab { flex: 1; padding: 0 10px; }
+}

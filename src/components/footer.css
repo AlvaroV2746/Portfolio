@@ -1,0 +1,30 @@
+.pf-footer {
+  padding: 30px 48px 40px;
+  border-top: 1px solid var(--glass-line);
+  background: color-mix(in oklab, var(--bg-2) 55%, transparent);
+}
+
+.pf-footer__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 24px;
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+.pf-footer__copy { font-size: 12.5px; color: var(--faint); }
+
+.pf-footer__links { display: flex; align-items: center; gap: 20px; }
+.pf-footer__links a {
+  color: var(--muted);
+  font-size: 13.5px;
+  transition: color .18s ease;
+}
+.pf-footer__links a:hover { color: var(--text); }
+
+@media (max-width: 575.98px) {
+  .pf-footer { padding: 24px 22px 32px; }
+  .pf-footer__inner { justify-content: center; text-align: center; }
+}

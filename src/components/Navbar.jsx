@@ -1,42 +1,73 @@
-import React from 'react';
-import { Link, useLocation } from 'react-router-dom';
+import { useState } from 'react';
+import './navbar.css';
 
-const Navbar = () => {
-  const location = useLocation();
-  const isActive = (path) => (location.pathname === path ? 'navborder' : '');
+const LINKS = [
+  { href: '#sobre-mi',  label: 'Sobre mí' },
+  { href: '#skills',    label: 'Skills' },
+  { href: '#proyectos', label: 'Proyectos' },
+  { href: '#contacto',  label: 'Contacto' },
+];
+
+const CV_URL = 'https://www.canva.com/design/DAFZLvOSf-M/g30fdTkEtFSjhJ6wvCxO-w/edit';
+
+/**
+ * Barra sticky del one-page.
+ * El tema no vive aquí: lo controla la página y lo baja por props, porque
+ * el atributo data-theme va en el contenedor .pf que envuelve todo.
+ */
+const Navbar = ({ theme = 'dark', onToggleTheme }) => {
+  const [open, setOpen] = useState(false);
+  const isDark = theme === 'dark';
 
   return (
-    <nav>
-      <div className="container">
-        <div className="row">
-          <div id="nav" className="col-12 col-sm-6 p-3">
-            <Link to="/">
-              <ul className={`px-3 ${isActive('/')}`}>Inicio</ul>
-            </Link>
-            <Link to="/about">
-              <ul className={`px-3 ${isActive('/about')}`}>Sobre mi</ul>
-            </Link>
-            <Link to="/projects">
-              <ul className={`px-3 ${isActive('/projects')}`}>Proyectos</ul>
-            </Link>
-            <Link to="/contact">
-              <ul className={`px-3 ${isActive('/contact')}`}>Contacto</ul>
-            </Link>
-          </div>
-          <div id="cv" className="col-12 col-sm-6 p-4">
-            <a 
-              id="txtbutton" 
-              className="btn btn-primary" 
-              target="_blank" 
-              rel="noreferrer"
-              href="https://www.canva.com/design/DAFZLvOSf-M/g30fdTkEtFSjhJ6wvCxO-w/edit" 
-              role="button"
-            >
-              Descargar CV <i id="download" className="fa-solid fa-download"></i>
-            </a>
-          </div>
+    <nav className="pf-nav">
+      <div className="pf-nav__inner">
+        <a className="pf-nav__brand" href="#inicio" onClick={() => setOpen(false)}>
+          <span className="pf-nav__mark">AV</span>
+          <span className="pf-nav__name">Álvaro Villarreal</span>
+        </a>
+
+        <div className="pf-nav__links">
+          {LINKS.map((l) => (
+            <a key={l.href} className="pf-nav__link" href={l.href}>{l.label}</a>
+          ))}
+        </div>
+
+        <div className="pf-nav__actions">
+          <button
+            type="button"
+            className="pf-nav__icon"
+            onClick={onToggleTheme}
+            aria-label={isDark ? 'Cambiar a tema claro' : 'Cambiar a tema oscuro'}
+            title={isDark ? 'Tema claro' : 'Tema oscuro'}
+          >
+            <i className={isDark ? 'fa-regular fa-sun' : 'fa-regular fa-moon'} aria-hidden="true" />
+          </button>
+
+          <a className="pf-nav__cv pf-mono" href={CV_URL} target="_blank" rel="noreferrer">
+            CV
+            <i className="fa-solid fa-download" aria-hidden="true" />
+          </a>
+
+          <button
+            type="button"
+            className="pf-nav__icon pf-nav__burger"
+            onClick={() => setOpen((v) => !v)}
+            aria-label="Abrir menú"
+            aria-expanded={open}
+          >
+            <i className={open ? 'fa-solid fa-xmark' : 'fa-solid fa-bars'} aria-hidden="true" />
+          </button>
         </div>
       </div>
+
+      {open && (
+        <div className="pf-nav__panel">
+          {LINKS.map((l) => (
+            <a key={l.href} href={l.href} onClick={() => setOpen(false)}>{l.label}</a>
+          ))}
+        </div>
+      )}
     </nav>
   );
 };
