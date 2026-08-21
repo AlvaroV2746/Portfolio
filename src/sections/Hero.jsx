@@ -11,12 +11,8 @@ const Hero = () => (
     <div className="container">
       <div className="row align-items-center g-5">
 
-        {/* --- mensaje ------------------------------------------------- */}
         <div className="col-12 col-lg-7">
-          <span className="pf-badge">
-            <span className="pf-badge__dot" />
-            DISPONIBLE PARA TRABAJAR
-          </span>
+
 
           <h1 className="pf-hero__title">
             Hola, soy Álvaro.<br />
@@ -24,13 +20,13 @@ const Hero = () => (
           </h1>
 
           <p className="pf-hero__lead">
-            Desarrollador Full Stack Junior. Vengo de redes y soporte técnico, así que
+            Desarrollador Full Stack. Vengo de redes y soporte técnico, así que
             entiendo el sistema completo: del servidor a la interfaz.
             Bilingüe español&nbsp;/&nbsp;inglés C1.
           </p>
 
           <div className="pf-hero__actions">
-            <a className="pf-btn pf-btn--primary" href="#proyectos">
+            <a className="pf-btn pf-btn--ghost" href="#proyectos">
               Ver proyectos
               <i className="fa-solid fa-arrow-right pf-shift" aria-hidden="true" />
             </a>
@@ -72,9 +68,9 @@ const Hero = () => (
             <div className="pf-card__head">
               <img className="pf-card__avatar" src={profileImg} alt="Álvaro Villarreal" />
               <div>
-                <div className="pf-card__name">Álvaro Villarreal</div>
-                <div className="pf-mono pf-card__role">full_stack_junior</div>
-                <div className="pf-card__meta">Tecnólogo en Redes · Ing. de Software</div>
+                <div className="pf-card__name">Alvaro Villarreal</div>
+                <div className="pf-mono pf-card__role">full_stack</div>
+                <div className="pf-card__meta">Tecnólogo en Redes · Desarrollador de Software</div>
               </div>
             </div>
 

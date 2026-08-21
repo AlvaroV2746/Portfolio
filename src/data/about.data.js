@@ -22,7 +22,6 @@ export const experience = [
 ];
 
 export const education = [
-  { title: 'Ingeniería en Desarrollo de Software', org: 'UNIMINUTO' },
   { title: 'Tecnólogo en Gestión de Redes de Comunicación', org: 'UNIMINUTO' },
   { title: 'Diplomado en Ciberseguridad', org: 'UNIMINUTO' },
   { title: 'Diplomado en Servicio al Cliente', org: 'Politécnico Superior de Colombia' },

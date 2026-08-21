@@ -3,12 +3,7 @@ import emailjs from '@emailjs/browser';
 import { EMAIL, channels, emailjsConfig } from '../data/contact.data';
 import './contact.css';
 
-/**
- * OJO con la plantilla de EmailJS:
- * este formulario envía { nombre, email, asunto, mensaje }.
- * La plantilla actual (template_9sihg0c) espera `telefono` en vez de `asunto`.
- * Añade {{asunto}} a la plantilla en el panel de EmailJS o el campo llegará vacío.
- */
+
 const ContactSection = () => {
   const [status, setStatus] = useState('idle'); // idle | sending | ok | error
   const [copied, setCopied] = useState(false);

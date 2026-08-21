@@ -34,7 +34,7 @@ const ProjectCard = ({ project, index }) => {
 
         <div className="pf-proj__actions">
           <a
-            className="pf-btn pf-btn--sm pf-btn--primary"
+            className="pf-btn pf-btn--sm pf-btn--ghost"
             href={demo} target="_blank" rel="noreferrer"
           >
             <i className="fa-solid fa-arrow-up-right-from-square" aria-hidden="true" />
